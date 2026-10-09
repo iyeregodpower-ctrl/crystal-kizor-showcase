@@ -32,7 +32,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-neutral-50/90 dark:bg-neutral-950/90 backdrop-blur-md shadow-sm border-b border-neutral-200 dark:border-neutral-800'
-          : 'bg-neutral-950/60 dark:bg-neutral-950/80 backdrop-blur-md border-b border-neutral-200/20'
+          : 'bg-[#2C241D] border-b border-[#2C241D]/30 md:bg-neutral-950/60 md:dark:bg-neutral-950/80 md:border-neutral-200/20'
       }`}
     >
       <div className="container mx-auto px-6 lg:px-8">
@@ -56,7 +56,7 @@ export default function Navbar() {
                 className={`text-sm font-medium transition-colors ${
                   isScrolled
                     ? 'text-neutral-700 dark:text-neutral-300 hover:text-gold'
-                    : 'text-neutral-200 hover:text-gold drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]'
+                    : 'text-neutral-200 md:text-neutral-200 hover:text-gold drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]'
                 }`}
               >
                 {link.label}
@@ -69,7 +69,7 @@ export default function Navbar() {
             className={`md:hidden p-2 rounded-lg transition-colors ${
               isScrolled
                 ? 'text-neutral-700 dark:text-neutral-300 hover:text-gold'
-                : 'text-neutral-50 hover:text-gold bg-neutral-800/40 hover:bg-neutral-800/60 backdrop-blur-sm'
+                : 'text-neutral-50 hover:text-gold bg-neutral-800 hover:bg-neutral-700'
             }`}
             onClick={() => setOpen(!open)}
             aria-label={open ? 'Close menu' : 'Open menu'}
